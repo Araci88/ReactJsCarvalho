@@ -1,9 +1,9 @@
 const Footer = () => {
     return (
         <div className="footer">
-            <button className="btn btn-secondary"> Instagram </button>
-            <button className="btn btn-secondary"> Facebook </button>
-            <button className="btn btn-secondary"> Whatsapp </button>
+            <button className="btn btn-secondary btnFooter"> Instagram </button>
+            <button className="btn btn-secondary btnFooter"> Facebook </button>
+            <button className="btn btn-secondary btnFooter"> Whatsapp </button>
         </div>
     );
 }

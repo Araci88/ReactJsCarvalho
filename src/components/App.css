@@ -1,14 +1,26 @@
 .navbar{
     border-bottom: 1px solid #253746;
+    margin-bottom: 3rem;
 }
-.navbar-brand{
+.linkRemes{
+    text-decoration: none;
     font-size: 30px;
     color: #FDCF41;
     font-weight: bolder;
 }
+.linkRemes:hover{
+    color: #FDCF41;
+    font-size: 33px;
+}
 .nav-link{
     font-weight: bold;
     font-size: medium;
+}
+.nav-link:hover{
+    font-size: 15px;
+}
+.linkCart{
+    text-decoration: none;
 }
 .numeroCarrito{
     font-family: Arial, Helvetica, sans-serif;
@@ -21,11 +33,38 @@
 }
 .bi-cart4{
     font-size: 20px;
+    color: white;
+}
+.cardProducto{
+    margin: 4px;
+}
+.card-body{
+    text-align: center;
+}
+.cardProductos{
+    margin: 4px;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 10px;
+}
+.linkVerProducto{
+    text-decoration: none;
+    color: white;
+}
+.linkVerProducto:hover{
+    color: #253746;
+}
+.itemDetail{
+    max-width: 500px;
+    margin-top: 10px;
+}
+.btnFinalizarCompra{
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 .divBtnItemCount{
-    border: 1px solid #253746;
-    width: 15rem;
-    height: 10rem;
+    width: 10rem;
+    height: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,20 +74,35 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     text-align: center;
+    align-self: center;
+}
+.btnItemCount{
+    display: flex;
+    justify-content: center;
 }
 .btnRestar{
-    width: 10rem;
-    align-self: center;
+    width: 3rem;
+    font-weight: bolder;   
 }
 .btnSumar{
-    width: 10rem;
-    align-self: center;
+    width: 3rem;
+    font-weight: bolder;
 }
 .btnAgregarAlCarrito{
     width: 10rem;
     align-self: center;
+    margin-top: 5px;
 }
 .footer{
+    border-top: 1px solid #253746;
+    margin-top: 3rem;
+    height: 7rem;
     display: flex;
     justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+.btnFooter{
+    height: 3rem;
+
 }
