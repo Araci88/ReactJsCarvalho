@@ -10,7 +10,7 @@ const ItemListContainer = () => {
     useEffect (() => {
         if(category){
             consultarBaseDeDatos("../json/productos.json").then(productList => {
-                const productsList = productList.filter(producto => producto.stock > 0).filter(producto => producto.idCategoria === parseInt(category))
+                const productsList = productList.filter(producto => producto.stock > 0).filter(producto => producto.idCategoria === category)
                 const cardProductos = ItemList ({productsList});
                 setProductos(cardProductos);
             })
@@ -26,9 +26,9 @@ const ItemListContainer = () => {
     console.log(productos);
 
     return (
-        <>
-            <div className="row cardProductos">{productos}</div>
-        </>
+        <div className="row cardProductos">
+            {productos}
+        </div>
     );
 }
 

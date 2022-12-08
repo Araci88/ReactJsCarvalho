@@ -1,7 +1,7 @@
 [
     {
         "idProducto": 1,
-        "idCategoria": 1, 
+        "idCategoria": "Termos", 
         "nombreProducto": "Termo Grande",
         "descripcionProducto": "Termo de acero inoxidable color negro", 
         "precioProducto": 9500, 
@@ -10,7 +10,7 @@
     },
     {
         "idProducto": 2, 
-        "idCategoria": 1, 
+        "idCategoria": "Termos", 
         "nombreProducto": "Termo botella", 
         "descripcionProducto": "Termo botella de acero inoxidable en varios colores",
         "precioProducto": 3500, 
@@ -19,7 +19,7 @@
     },
     {
         "idProducto": 3, 
-        "idCategoria": 2,
+        "idCategoria": "Tazas",
         "nombreProducto": "Taza Blanca",
         "descripcionProducto": "Taza de cerámica color blanco",
         "precioProducto": 2500, 
@@ -28,7 +28,7 @@
     },
     {
         "idProducto": 4, 
-        "idCategoria": 2,
+        "idCategoria": "Tazas",
         "nombreProducto": "Taza Negra", 
         "descripcionProducto": "Taza de cerámica color negro",
         "precioProducto": 2500, 
@@ -37,7 +37,7 @@
     },
     {
         "idProducto": 5, 
-        "idCategoria": 3,
+        "idCategoria": "Ropa",
         "nombreProducto": "Remera hombre", 
         "descripcionProducto": "Remera manga corta de algodón en varios colores",
         "precioProducto": 3000, 
@@ -46,7 +46,7 @@
     },
     {
         "idProducto": 6, 
-        "idCategoria": 3,
+        "idCategoria": "Ropa",
         "nombreProducto": "Remera mujer", 
         "descripcionProducto": "Remera manga corta de algodón en varios colores",
         "precioProducto": 3000, 
@@ -55,7 +55,7 @@
     },
     {
         "idProducto": 7, 
-        "idCategoria": 3,
+        "idCategoria": "Ropa",
         "nombreProducto": "Remera manga larga",
         "descripcionProducto": "Remera manga larga de algodón para hombre en varios colores",
         "precioProducto": 5000, 
@@ -64,7 +64,7 @@
     },
     {
         "idProducto": 8, 
-        "idCategoria": 3,
+        "idCategoria": "Ropa",
         "nombreProducto": "Remera manga larga", 
         "descripcionProducto": "Remera manga larga de algodón para mujer en varios colores",
         "precioProducto": 4500, 
@@ -73,7 +73,7 @@
     },
     {
         "idProducto": 9, 
-        "idCategoria": 3,
+        "idCategoria": "Ropa",
         "nombreProducto": "Buzo Hombre", 
         "descripcionProducto": "Buzo de algodón en varios colores",
         "precioProducto": 9000, 
@@ -82,7 +82,7 @@
     },
     {
         "idProducto": 10, 
-        "idCategoria": 3,
+        "idCategoria": "Ropa",
         "nombreProducto": "Buzo Mujer", 
         "descripcionProducto": "Buzo de algodón en varios colores",
         "precioProducto": 8500, 
@@ -91,7 +91,7 @@
     },
     {
         "idProducto": 11, 
-        "idCategoria": 3,
+        "idCategoria": "Ropa",
         "nombreProducto": "Body de bebé", 
         "descripcionProducto": "Bodys para bebés 100% algodón",
         "precioProducto": 1500,
@@ -100,7 +100,7 @@
     },
     {
         "idProducto": 12, 
-        "idCategoria": 3,
+        "idCategoria": "Ropa",
         "nombreProducto": "Remera para chicos", 
         "descripcionProducto": "Remera manga corta unisex 100% algodón, varios colores",
         "precioProducto": 1600,

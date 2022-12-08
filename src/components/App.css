@@ -10,7 +10,9 @@
 }
 .linkRemes:hover{
     color: #FDCF41;
-    font-size: 33px;
+}
+.btnRemes:hover{
+    transform: scale(1.1);
 }
 .nav-link{
     font-weight: bold;
@@ -19,22 +21,24 @@
 .nav-link:hover{
     font-size: 15px;
 }
+
+
 .linkCart{
     text-decoration: none;
+    color: white;
 }
 .numeroCarrito{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    font-weight: bolder;
-    color: #253746;
-    font-size: 15px;
-    margin-left: 1rem;
-    margin-right: 0.5rem;
+    font-weight: bold;
+    color: white;
 }
 .bi-cart4{
     font-size: 20px;
     color: white;
 }
+
+
 .cardProducto{
     margin: 4px;
 }
@@ -54,6 +58,8 @@
 .linkVerProducto:hover{
     color: #253746;
 }
+
+
 .itemDetail{
     max-width: 500px;
     margin-top: 10px;
@@ -93,6 +99,14 @@
     align-self: center;
     margin-top: 5px;
 }
+
+
+.inputCheckout{
+    width: 100%;
+    border: 1px solid #253746;
+}
+
+
 .footer{
     border-top: 1px solid #253746;
     margin-top: 3rem;

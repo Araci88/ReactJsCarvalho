@@ -1,12 +1,9 @@
 import {useState} from 'react';
 
-const ItemCount = ({stock, onAdd}) => {
-    const [contador, setContador] = useState(1);
+const ItemCount = ({inicial, stock, onAdd}) => {
+    const [contador, setContador] = useState(inicial);
 
-    const agregarAlCarrito = () => {
-        onAdd(contador)
-        console.log(contador)
-    }
+    const agregarAlCarrito = () => onAdd(contador)
 
     const sumar = () => {
         if(contador < stock)
@@ -23,7 +20,7 @@ const ItemCount = ({stock, onAdd}) => {
                 <span className='numeroItemCount'>{contador}</span> 
                 <button className='btn btn-secondary btnSumar' onClick={() => sumar()}>+</button>
             </div>
-            <button className='btn btn-primary btnAgregarAlCarrito'>Agregar al carrito</button>
+            <button className='btn btn-primary btnAgregarAlCarrito' onClick={agregarAlCarrito}>Agregar al carrito</button>
         </div>
     );
 }
