@@ -6,7 +6,7 @@
         "descripcionProducto": "Termo de acero inoxidable color negro", 
         "precioProducto": 9500, 
         "stock": 10, 
-        "imgProducto": "TermoNegro.png"
+        "imgProducto": "https://firebasestorage.googleapis.com/v0/b/remes-articulos-sublimables.appspot.com/o/TermoNegro.png?alt=media&token=4b0f8804-9015-4e2b-8132-6525c66a1124"
     },
     {
         "idProducto": 2, 
@@ -15,7 +15,7 @@
         "descripcionProducto": "Termo botella de acero inoxidable en varios colores",
         "precioProducto": 3500, 
         "stock": 20, 
-        "imgProducto": "termosBotella.png"
+        "imgProducto": "https://firebasestorage.googleapis.com/v0/b/remes-articulos-sublimables.appspot.com/o/termosBotella.png?alt=media&token=e018f0cb-2fd0-4a55-b62d-aba211b36827"
     },
     {
         "idProducto": 3, 
@@ -24,7 +24,7 @@
         "descripcionProducto": "Taza de cerámica color blanco",
         "precioProducto": 2500, 
         "stock": 100, 
-        "imgProducto": "tazaBlanca.png"
+        "imgProducto": "https://firebasestorage.googleapis.com/v0/b/remes-articulos-sublimables.appspot.com/o/tazaBlanca.png?alt=media&token=b3b07d9a-559b-4bd0-976d-d3027db7afcd"
     },
     {
         "idProducto": 4, 
@@ -33,7 +33,7 @@
         "descripcionProducto": "Taza de cerámica color negro",
         "precioProducto": 2500, 
         "stock": 15, 
-        "imgProducto": "tazaNegra.png"
+        "imgProducto": "https://firebasestorage.googleapis.com/v0/b/remes-articulos-sublimables.appspot.com/o/tazaNegra.png?alt=media&token=f78d0834-c3c4-4380-852e-859c5c267797"
     },
     {
         "idProducto": 5, 
@@ -42,7 +42,7 @@
         "descripcionProducto": "Remera manga corta de algodón en varios colores",
         "precioProducto": 3000, 
         "stock": 90,
-        "imgProducto": "remerasHombre.png"
+        "imgProducto": "https://firebasestorage.googleapis.com/v0/b/remes-articulos-sublimables.appspot.com/o/remerasHombre.png?alt=media&token=d5a92443-5dbf-4c28-9a4f-d47c0bfb5a76"
     },
     {
         "idProducto": 6, 
@@ -51,7 +51,7 @@
         "descripcionProducto": "Remera manga corta de algodón en varios colores",
         "precioProducto": 3000, 
         "stock": 90,
-        "imgProducto": "remeraMujer.png"
+        "imgProducto": "https://firebasestorage.googleapis.com/v0/b/remes-articulos-sublimables.appspot.com/o/remeraMujer.png?alt=media&token=e10aa0ea-c52e-49ac-ad4b-6fc68528c030"
     },
     {
         "idProducto": 7, 
@@ -60,7 +60,7 @@
         "descripcionProducto": "Remera manga larga de algodón para hombre en varios colores",
         "precioProducto": 5000, 
         "stock": 15, 
-        "imgProducto": "remeraLargaHombre.png"
+        "imgProducto": "https://firebasestorage.googleapis.com/v0/b/remes-articulos-sublimables.appspot.com/o/remeraLargaHombre.png?alt=media&token=36036e61-d747-49d8-a376-e4ce7a57bd81"
     },
     {
         "idProducto": 8, 
@@ -69,7 +69,7 @@
         "descripcionProducto": "Remera manga larga de algodón para mujer en varios colores",
         "precioProducto": 4500, 
         "stock": 30, 
-        "imgProducto": "remeraLargaMujer.png"
+        "imgProducto": "https://firebasestorage.googleapis.com/v0/b/remes-articulos-sublimables.appspot.com/o/remeraLargaMujer.png?alt=media&token=0974e7d3-ec5c-4c5a-a390-51c5a92f3bd9"
     },
     {
         "idProducto": 9, 
@@ -78,7 +78,7 @@
         "descripcionProducto": "Buzo de algodón en varios colores",
         "precioProducto": 9000, 
         "stock": 25,
-        "imgProducto": "buzoHombre.png"
+        "imgProducto": "https://firebasestorage.googleapis.com/v0/b/remes-articulos-sublimables.appspot.com/o/buzoHombre.png?alt=media&token=6a62fa98-389c-4431-a461-c248c8b7590b"
     },
     {
         "idProducto": 10, 
@@ -87,7 +87,7 @@
         "descripcionProducto": "Buzo de algodón en varios colores",
         "precioProducto": 8500, 
         "stock": 40,
-        "imgProducto": "buzoMujer.png"
+        "imgProducto": "https://firebasestorage.googleapis.com/v0/b/remes-articulos-sublimables.appspot.com/o/buzoMujer.png?alt=media&token=a2bf750c-7cd5-44a7-976d-fe1779556d67"
     },
     {
         "idProducto": 11, 
@@ -96,7 +96,7 @@
         "descripcionProducto": "Bodys para bebés 100% algodón",
         "precioProducto": 1500,
         "stock": 30, 
-        "imgProducto": "ropa_bebe.png"
+        "imgProducto": "https://firebasestorage.googleapis.com/v0/b/remes-articulos-sublimables.appspot.com/o/ropa_bebe.png?alt=media&token=6c731f32-bb21-4150-ae81-56b9394e93c9"
     },
     {
         "idProducto": 12, 
@@ -105,6 +105,6 @@
         "descripcionProducto": "Remera manga corta unisex 100% algodón, varios colores",
         "precioProducto": 1600,
         "stock": 45, 
-        "imgProducto": "remerasChicos.png"
+        "imgProducto": "https://firebasestorage.googleapis.com/v0/b/remes-articulos-sublimables.appspot.com/o/remerasChicos.png?alt=media&token=87326c59-e073-4c9b-9a8b-975ab140c74a"
     }
 ]

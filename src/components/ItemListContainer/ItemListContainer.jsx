@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ItemList from "../ItemList/ItemList";
 import {consultarBaseDeDatos} from "../../assets/funciones.js"
+import { crearBDD } from "../../assets/firebase.js";
 //consulta bases de datos
 const ItemListContainer = () => {
     const [productos, setProductos] = useState ([]);
@@ -21,9 +22,8 @@ const ItemListContainer = () => {
                 setProductos(cardProductos);
             })
         }
-
+        //crearBDD().then(productos => console.log(productos))
     }, [category]);
-    console.log(productos);
 
     return (
         <div className="row cardProductos">

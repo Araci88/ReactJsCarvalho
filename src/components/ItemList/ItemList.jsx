@@ -1,6 +1,5 @@
 import Item from "../Item/Item";
 
-// acá creo las cards de bootstrap
 const ItemList = ({productsList}) => {
     console.log(productsList)
     return (

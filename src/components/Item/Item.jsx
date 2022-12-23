@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
+import { useDarkModeContext } from "../../context/DarkModeContext";
 const Item = ({producto}) => {
+
+    const {darkMode} = useDarkModeContext()
+
     return (
-        <div className="card cardProducto" style={{width: '18rem'}}>
-            <img src={`../img/${producto.imgProducto}`} className="card-img-top cardImg" alt="..." />
-            <div className="card-body">
+        <div className={`card cardProducto ${darkMode ? 'text-white bg-secondary' : 'bg-ligth'}`} style={{width: '18rem'}}>
+            <img src={producto.imgProducto} className="card-img-top cardImg" alt="..." />
+            <div className= {`${darkMode ? 'cardBodyDark' : 'card-body'}`}>
                 <h5 className="card-title text-center">{producto.nombreProducto}</h5>
                 <p className="card-text text-center">$ {new Intl.NumberFormat('de-DE').format(producto.precioProducto)}</p>
                 <button className="btn btn-primary btnVerProducto"> 

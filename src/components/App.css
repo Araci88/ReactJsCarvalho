@@ -34,19 +34,33 @@
 .containerCart{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+.containerCardCart{
+    align-self: center;
+}
+.containerCartFull{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-content: center;
+}
+.imgCardCart{
+    align-content: center;
 }
 .parrafoCart{
-    text-align: center;
     font-weight: bold;
+    text-align: center;
+    color: #253746;
 }
 .btnPagar:hover{
     transform: scale(1.1);
 }
-.btnPagar{
-    width: 9rem;
+.btnCart{
     align-self: center;
 }
+
 
 .linkCart{
     text-decoration: none;
@@ -64,13 +78,23 @@
     color: #FDCF41;
 }
 
+.darkMode{
+    background-color: #253746;
+    color: antiquewhite;
+}
 
 .cardProducto{
     margin: 4px;
 }
 .card-body{
     text-align: center;
+    color: #253746;
 }
+.cardBodyDark{
+    background-color: grey;
+    text-align: center;
+}
+
 .cardProductos{
     margin: 4px;
     align-items: center;
@@ -90,10 +114,19 @@
     max-width: 500px;
     margin-top: 10px;
 }
+.cardTextItemDetail{
+    color: #253746;
+}
 .btnFinalizarCompra{
     margin-top: 10px;
     margin-bottom: 5px;
 }
+.imgItemDetail{
+    display:block;
+    margin:auto;
+    max-height: 100%;
+}
+
 .divBtnItemCount{
     width: 10rem;
     height: 5rem;
@@ -107,6 +140,7 @@
     font-weight: bolder;
     text-align: center;
     align-self: center;
+    color: #253746;
 }
 .btnItemCount{
     display: flex;
