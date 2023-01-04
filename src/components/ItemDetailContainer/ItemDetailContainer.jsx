@@ -1,22 +1,19 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { consultarBaseDeDatos } from "../../assets/funciones.js"
+import { getProducto } from "../../assets/firebase";
 import ItemDetail from "../ItemDetail/ItemDetail.jsx";
 const ItemDetailContainer = () => {
 
     const [producto, setProducto] = useState([]);
-    const {idProducto} = useParams();
+    const {id} = useParams();
 
     useEffect( () => {
-        consultarBaseDeDatos("../json/productos.json").then(productos => {
-            const prod = productos.find(product => product.idProducto === parseInt(idProducto))
-            setProducto(prod)
-        })
+        getProducto(id).then(prod = setProducto(prod))
     }, []);
 
     return (
         <div className="card mb-3 container itemDetail">
-            <ItemDetail item = {producto} />
+            <ItemDetail item={producto} />
         </div>
     );
 }

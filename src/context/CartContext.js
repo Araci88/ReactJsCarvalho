@@ -7,22 +7,22 @@ export const useCartContext = () => useContext(CartContext);
 export const CartProvider = (props) => {
     const [cart, setCart] = useState([]);
 
-    const isInCart = (idProducto) => {
-        return cart.find(product => product.idProducto === idProducto)
+    const isInCart = (id) => {
+        return cart.find(producto => producto.id === id)
     }
 
-    const addItem = (product, cantidad) =>{
-        if(isInCart(product.idProducto)){
-           const indice = cart.findIndex (prod => prod.idProducto === product.idProducto)
+    const addItem = (producto, cantidad) =>{
+        if(isInCart(producto.id)){
+           const indice = cart.findIndex (prod => prod.id === producto.id)
            const aux = [...cart]
            aux[indice].cant = cantidad
            setCart(aux)
         } else{
-            const newProduct = {
-                ...product,
+            const nuevoProducto = {
+                ...producto,
                 cant : cantidad
             }
-            setCart([...cart, newProduct])
+            setCart([...cart, nuevoProducto])
         }
     }
 
@@ -30,11 +30,8 @@ export const CartProvider = (props) => {
         setCart([])
     }
 
-    const removeItem = (idProducto) => {
-        /* const aux = [...cart]
-        const indice = aux.findIndex (prod => prod.idProducto === idProducto)
-        setCart (aux.splice(indice, 1)) */
-        setCart (cart.filter(prod => prod.idProducto !== idProducto))
+    const removeItem = (id) => {
+        setCart (cart.filter(prod => prod.id !== id))
     }
 
     const getItemQuantity = () => {
@@ -42,7 +39,7 @@ export const CartProvider = (props) => {
     }
 
     const totalPrice = () => {
-        return cart.reduce((acumulativo, prod) => acumulativo += (prod.cant * prod.precioProducto), 0)
+        return cart.reduce((acumulativo, prod) => acumulativo += (prod.cant * prod.precio), 0)
     }
     console.log(cart)
     return(

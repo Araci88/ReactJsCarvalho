@@ -31,8 +31,18 @@ const crearBDD = async () => {
     })
 }
 
-const consultarBDD = async () => {
-
+const getProductos = async () => {
+    const productos = await getDocs(collection(db, "productos"))
+    const items = productos.docs.map (prod => {
+        return {...prod.data(), id: prod.id}
+    })
+    return items
 }
 
-export { crearBDD }
+const getProducto = async (id) =>{
+    const producto = await getDoc(doc(db, "productos", id))
+    const item = {...producto.data(), id: producto.id }
+    return item
+}
+
+export { crearBDD, getProductos, getProducto }

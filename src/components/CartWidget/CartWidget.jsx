@@ -8,7 +8,7 @@ const CartWidget = () => {
     return (
         <ul className="navbar-nav me-auto">
             <li className="nav-item">
-                <Link className="linkCart" to="/cart">
+                <Link className="linkCart" to={'/cart'}>
                     <i className="bi bi-cart3"></i>
                     {getItemQuantity() > 0 && <span className="numeroCarrito">{getItemQuantity()}</span>}
                 </Link>

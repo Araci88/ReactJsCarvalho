@@ -23,19 +23,19 @@ const Cart = () => {
                 <div className='container containerCartFull'>
                     <div className='text-center'>
                         {
-                            cart.map(product => 
-                            <div className='card containerCardCart' key={product.idProducto} style={{maxWidth: '100%'}}>
+                            cart.map(prod => 
+                            <div className='card containerCardCart' key={prod.id} style={{maxWidth: '100%'}}>
                                 <div className='row g-0'>
                                     <div className='col-md-4'>
-                                        <img src={product.imgProducto} alt="" className='img-fluid rounded-start imgCardCart' style={{maxWidth: '30%'}}/>
+                                        <img src={prod.img} alt="" className='img-fluid rounded-start imgCardCart' style={{maxWidth: '30%'}}/>
                                     </div>
                                     <div className='col-md-8'>
                                         <div className='card-body'>
-                                            <h5 className='card-title'> {`${product.nombreProducto}`} </h5>
-                                            <p className='card-text'>Cantidad: {product.cant} </p>
-                                            <p className='card-text'>Precio por unidad: $ {new Intl.NumberFormat('de-DE').format(product.precioProducto)}</p>
-                                            <p className='card-text'>Total: $ {new Intl.NumberFormat('de-DE').format(product.precioProducto * product.cant)} </p>
-                                            <button className='btn btn-danger' onClick={() => removeItem(product.idProducto)}>Eliminar</button>
+                                            <h5 className='card-title'> {`${prod.nombre}`} </h5>
+                                            <p className='card-text'>Cantidad: {prod.cant} </p>
+                                            <p className='card-text'>Precio por unidad: $ {new Intl.NumberFormat('de-DE').format(prod.precio)}</p>
+                                            <p className='card-text'>Total: $ {new Intl.NumberFormat('de-DE').format(prod.precio * prod.cant)} </p>
+                                            <button className='btn btn-danger' onClick={() => removeItem(prod.id)}>Eliminar</button>
                                         </div>
                                     </div>
                                 </div>

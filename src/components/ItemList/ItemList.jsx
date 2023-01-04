@@ -1,12 +1,12 @@
 import Item from "../Item/Item";
 
 const ItemList = ({productsList}) => {
-    console.log(productsList)
     return (
         <>
-            {productsList.map(product => <Item key={product.idProducto} producto={product}/>)}
+            {productsList.map(producto => <Item key={producto.id} prod={producto}/>)}
         </>
     );
 }
 
 export default ItemList;
+
