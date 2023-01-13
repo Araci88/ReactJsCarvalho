@@ -43,6 +43,7 @@ const Cart = () => {
                             )
                         }
                     </div>
+
                     <div className='btnCart'>
                         <p className={`${darkMode ? 'text-white parrafoCart' : 'parrafoCart'}`}>Total de Compra: $ {new Intl.NumberFormat('de-DE').format(totalPrice())}</p>
                         <button className='btn btn-danger' onClick={emptyCart}>Vaciar Carrito</button>

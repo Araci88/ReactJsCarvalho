@@ -15,9 +15,11 @@ const ItemDetail = ({item}) => {
 
     return (
         <div className={`row g-0 ${darkMode ? 'text-white bg-secondary' : 'bg-white'}`}>
+
             <div className="col md-4 imgItemDetail">
                 <img src={item.img} alt="" className="img-fluid rounded-start"/>
             </div>
+            
             <div className="col md-8">
                 <h5 className="card-title cardTextItemDetail">{item.nombre}</h5>
                 <p className="card-text cardTextItemDetail">Descripción: {item.descripcion}</p>

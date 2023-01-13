@@ -165,7 +165,9 @@
     width: 100%;
     border: 1px solid #253746;
 }
-
+.parrafoErrores{
+    color: red;
+}
 
 .footer{
     border-top: 1px solid #253746;

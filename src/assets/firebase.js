@@ -1,7 +1,6 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, addDoc, getDocs, getDoc, collection, doc } from 'firebase/firestore';
+import { getFirestore, addDoc, getDocs, getDoc, updateDoc, deleteDoc, collection, doc } from 'firebase/firestore';
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: process.env.API_KEY,
   authDomain: "remes-articulos-sublimables.firebaseapp.com",
@@ -11,7 +10,6 @@ const firebaseConfig = {
   appId: "1:769662419270:web:947464c8ab364acf69a547"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
 const db = getFirestore();
@@ -45,4 +43,34 @@ const getProducto = async (id) =>{
     return item
 }
 
-export { crearBDD, getProductos, getProducto }
+const updateProducto = async (id, infoNueva) =>{
+    const estado = await updateDoc(doc(db, "productos", id), infoNueva)
+    return estado;
+}
+
+const deleteProducto = async (id) =>{
+    const estado = deleteDoc(doc(db, "productos", id));
+    return estado;
+}
+
+const createOrdenCompra = async (cliente, preTotal, fecha) => {
+    const ordenCompra = await addDoc(collection(db, "ordenCompra"), {
+        nombreCompleto: cliente.nombreCompleto,
+        email: cliente.email,
+        repetirEmail: cliente.repetirEmail,
+        dni: cliente.dni,
+        direccion: cliente.direccion,
+        telefono: cliente.telefono,
+        fecha: fecha,
+        precioTotal: preTotal
+    })
+    return ordenCompra
+}
+
+const getOrdenCompra = async (id) => {
+    const ordenCompra = await getDoc(doc(db, "ordenCompra", id))
+    const item = {...ordenCompra.data(), id: ordenCompra.id}
+    return item
+}
+
+export { crearBDD, getProductos, getProducto, updateProducto, deleteProducto, createOrdenCompra, getOrdenCompra }

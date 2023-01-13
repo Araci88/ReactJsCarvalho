@@ -16,14 +16,14 @@ const App = () => {
       <BrowserRouter>
         <DarkModeProvider>
           <NavBar/>
-            <Routes>
-              <Route path='/' element={<ItemListContainer/>}/>
-              <Route path='/product/:id' element={<ItemDetailContainer/>}/>
-              <Route path='/category/:category' element={<ItemListContainer/>}/>
-              <Route path='/cart'element={<Cart/>}/>
-              <Route path='/checkout' element={<Checkout/>}/>
-            </Routes>
-            <Footer/>
+          <Routes>
+            <Route path='/' element={<ItemListContainer/>}/>
+            <Route path='/product/:id' element={<ItemDetailContainer/>}/>
+            <Route path='/category/:category' element={<ItemListContainer/>}/>
+            <Route path='/cart'element={<Cart/>}/>
+            <Route path='/checkout' element={<Checkout/>}/>
+          </Routes>
+          <Footer/>
         </DarkModeProvider>
       </BrowserRouter>
     </>
